@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+
+{% block body %}
+
+{% load static %}
+
+
+      <section class="inner_page_head">
+         <div class="container_fuild">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="full">
+                     <h3>Our Products</h3>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- end inner page section -->
+      <!-- product section -->
+      <section class="product_section layout_padding">
+         <div class="container">
+            <div class="heading_container heading_center">
+               <h5>
+                   <span>New Arrival</span>
+               </h5>
+            </div>
+            <div class="row">
+               {% for h in data %}
+               
+               <div class="col-sm-6 col-md-4 col-lg-3">
+                  <div class="box">
+                     <div class="option_container">
+                        <div class="options">
+                           <a href="{% url 'product_detail' h.id %}" class="option1">
+                           Detail
+                           </a>
+                           <a href="" class="option2">
+                           Buy Now
+                           </a>
+                        </div>
+                     </div>
+                     <div class="img-box">
+                        <img src="/media/{{h.product_image}}" alt="">
+                     </div>
+                     <div class="detail-box">
+                        <h5>
+                              {{h.title}}
+                        </h5>
+                        <h6>
+                           ${{h.selling_price}}
+                        </h6>
+                     </div>
+                  </div>
+               </div>    
+               
+               {% endfor %}
+            </div>
+            <div class="btn-box">
+               <a href="">
+               View All products
+               </a>
+            </div>
+         </div>
+      </section>
+
+
+  
+
+      {% endblock body %}
+    
