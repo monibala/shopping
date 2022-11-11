@@ -17,7 +17,7 @@ urlpatterns = [
    path('paymentdone', views.paymentdone, name='paymentdone'),
    path('category_detail/<int:pk>', views.category_detail, name='category_detail'),
    path('search', views.search, name='search'),
-   path('blog_category', views.blog_category, name='blog_category'),
+   path('blog_category/<int:id>', views.blog_category, name='blog_category'),
 
 
 

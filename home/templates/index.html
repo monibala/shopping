@@ -999,7 +999,7 @@
                            alt="" style="height:300px;"
                          /></a>
                          <div class="p_icon" style='background:#ff3333;color:black;width:300px;'>
-                           <a href="{% url 'blog_category' %}" style='background:black;color:white'>
+                           <a href="{% url 'blog_category' a.id %}" style='background:black;color:white'>
                              <i class="ti-eye" ></i>
                            </a>
                            <a href="#" style='background:black;color:white'>
@@ -1015,7 +1015,7 @@
                          
                            
                           
-                         <a href=" {% url 'blog_category' %}" class="d-block">
+                         <a href=" {% url 'blog_category' a.id %}" class="d-block">
                            <h4 style="color:black">{{a.name}}</h4>
                          </a>
                        
@@ -1061,7 +1061,7 @@
             /></a>
 
               
-            <a href=" {% url 'blog_category' %}" class="d-block">
+            <a href=" {% url 'blog_category' a.id %}" class="d-block">
                <h4 style="color:black;text-align:center">{{a.name}}</h4>
              </a>
              

@@ -68,7 +68,7 @@
           <div class="page_link">
             <a href="index.html">Home</a>
             <a href="category.html">Shop</a>
-            <a href="category.html">Women Fashion</a>
+            <a href="category.html">{{cats.name}}</a>
           </div>
         </div>
       </div>
@@ -85,7 +85,7 @@
           
           <div class="latest_product_inner">
             <div class="row">
-               {% for a in cats %}
+               {% for a in prod %}
                
               <div class="col-lg-3 col-md-6">
                 <div class="single-product">
@@ -122,8 +122,10 @@
               </div>
           </div>
         </div>
-       
-       
+       </div>
+       </div>
+       </section>
+    
 
 
 {% endblock body %}

@@ -20,13 +20,13 @@ def home(request):
    
     return render(request, 'index.html', data)
 
-def blog_category(request):
+def blog_category(request,id):
     
-    cats = Product.objects.all()
-    
-    
-   
-    data={'cats':cats }
+    cats = Category.objects.get(id=id)
+    print(cats)
+    prod = Product.objects.filter(category__name = cats)
+    print(prod)
+    data={'cats':cats ,'prod':prod}
     return render(request,'blog_category.html',data) 
 
 
