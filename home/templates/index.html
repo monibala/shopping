@@ -968,7 +968,7 @@
       <!-- footer start -->
 
 
-      {% comment %} <section class="cat_product_area section_gap" style='margin-top:-140px'>
+ <section class="cat_product_area section_gap" style='margin-top:-140px'>
          <div class="container">
 
             <div class="heading_container heading_center">
@@ -999,7 +999,7 @@
                            alt="" style="height:300px;"
                          /></a>
                          <div class="p_icon" style='background:#ff3333;color:black;width:300px;'>
-                           <a href="{% url 'product_detail' a.id %}" style='background:black;color:white'>
+                           <a href="{% url 'blog_category' %}" style='background:black;color:white'>
                              <i class="ti-eye" ></i>
                            </a>
                            <a href="#" style='background:black;color:white'>
@@ -1019,10 +1019,10 @@
                            <h4 style="color:black">{{a.name}}</h4>
                          </a>
                        
-                         <div class="mt-3">
+                         <!-- <div class="mt-3">
                            <span class="mr-4">${{a.selling_price}}</span>
                            <del>${{a.discounted_price}}</del>
-                         </div> 
+                         </div>  -->
                        </div>
                      </div>
                    </div>
@@ -1037,9 +1037,9 @@
              </div>
            </div>
          </div>
-   </section> {% endcomment %}
+   </section> 
    
-<section>
+<!-- <section>
 
    <div class="heading_container heading_center" style='margin-top:-30px'>
       <h2>
@@ -1071,11 +1071,8 @@
      
   </div>
 </section>
-
- 
-     
-
-    <script>
+ -->
+    <!-- <script>
      
 
       var owl = $('.owl-carousel');
@@ -1093,5 +1090,6 @@
       $('.stop').on('click',function(){
           owl.trigger('stop.owl.autoplay')
       })
-    </script>
+    </script> -->
+   
       {% endblock body %}
