@@ -190,10 +190,9 @@
 {% block payment-gateway %} 
 
 <!-- Replace "test" with your own sandbox Business account app client ID -->
-<script src="https://www.paypal.com/sdk/js?client-id=AafKeAGTEqrMF4S2Tjxl5iV5KDeJCB_0Gpdi0uhCK5bd4dtibld84YIXna8ueCtV_u7vzXp9EVYdJIJD
-&currency=USD"></script>
+<script src="https://www.paypal.com/sdk/js?client-id=Ad0KMXw-MdCn3L37yDa4Esc0PnlsDH3t2NYuzDL9EmL0LmV5cn4wYNoQ0Kd79JeymRClWAnxUiXTqia4&currency=USD"></script>
 <!-- Set up a container element for the button -->
-<div id="paypal-button-container"></div>
+
 <script>
   paypal.Buttons({
     // Sets up the transaction when a payment button is clicked
@@ -201,7 +200,7 @@
       return actions.order.create({
         purchase_units: [{
           amount: {
-            value: '' // Can also reference a variable or function
+            value: '{{totalamount}}' // Can also reference a variable or function
           }
         }]
       });

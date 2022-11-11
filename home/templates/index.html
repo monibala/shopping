@@ -1,3 +1,7 @@
+   <!-- owl carousel -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
     {% extends "base.html" %}
     {% load static %}
@@ -65,6 +69,15 @@
            
          }
       }
+      /* Category */
+   .owl-carousel .item {
+    height: 10rem;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center; font-size:70px; color:#fff;
+}
+   
     </style>
              <!-- slider section -->
              {% comment %} <section class="slider_section">
@@ -168,46 +181,58 @@
            
 <div class="">
   
-   <div id="myCarousel" class="carousel slide" data-ride="carousel">
-     <!-- Indicators -->
-     <ol class="carousel-indicators">
-       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-       <li data-target="#myCarousel" data-slide-to="1"></li>
-       <li data-target="#myCarousel" data-slide-to="2"></li>
-     </ol>
- 
-     <!-- Wrapper for slides -->
-     <div class="carousel-inner">
- 
-       <div class="item active">
-         <img src="{% static 'images/slider1.jpg' %}" alt="Los Angeles" style="width:100%;height:500px;">
-         <div class="carousel-caption">
-           {% comment %} <h3>Los Angeles</h3>
-           <p>LA is always so much fun!</p> {% endcomment %}
-         </div>
-       </div>
- 
-       {% comment %} <div class="item">
-         <img src="{% static 'images/slider1.jpg' %}" alt="Los Angeles" style="width:100%;height:500px;">
-         <div class="carousel-caption">
-            <h3>Chicago</h3>
-           <p>Thank you, Chicago!</p>
-         </div>
-       </div>
-     
-       <div class="item">
-         <img src="{% static 'images/slider1.jpg' %}" alt="Los Angeles" style="width:100%;height:500px;">
-         <div class="carousel-caption">
-            <h3>New York</h3>
-           <p>We love the Big Apple!</p> 
-         </div>
-       </div>
-    {% endcomment %}
-     </div>
- 
-     <!-- Left and right controls -->
-     
-   </div>
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="">
+  
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src=" {% static 'images/h1.jpg' %}" alt="" style="width:100%;height:500px">
+      </div>
+
+      <div class="item">
+        <img src=" {% static 'images/h5.jpeg' %}" alt="" style="width:100%;height:500px">
+      </div>
+    
+      <div class="item">
+        <img src=" {% static 'images/slider1.jpg' %}" alt="" style="width:100%;height:500px">
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    {% comment %} <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a> {% endcomment %}
+  </div>
+</div>
+
+</body>
+</html>
+
  </div>
  
     
@@ -226,11 +251,11 @@
       <section class="why_section layout_padding">
          <div class="container">
             <div class="heading_container heading_center">
-               <h2>
+               <h3>
                   Why Shop With Us
-               </h2>
+               </h3>
                <br>
-               <p style='color:black; font-size:20px;font-family:Roboto,RobotoDraft,Helvetica,Arial,sans-serif;'>
+               <p style='color:black; font-size:20px;font-family:Cambria;'>
                   Orchha Art & Craft is listed in Trade India's list of verified sellers offering supreme quality of Fashionable Sterling Silver Designer Ladies Ring Perfect For Any Occasion ,Beautiful Butterfly Shaped Silver Ring For Ladies Casual And Party Wear etc. Buy silver rings ,silver necklaces in bulk from us for the best quality products and service.
 
                </p>
@@ -326,10 +351,11 @@
                         </svg>
                      </div>
                      <div class="detail-box">
-                        <h5>
+                        <h5 style='color:white;'>
                            Fast Delivery
                         </h5>
                         <p>
+                           variations of passages of Lorem Ipsum available,
                            variations of passages of Lorem Ipsum available
                         </p>
                      </div>
@@ -441,10 +467,11 @@
                         </svg>
                      </div>
                      <div class="detail-box">
-                        <h5>
+                        <h5 style='color:white;'>
                            Free Shiping
                         </h5>
                         <p>
+                           variations of passages of Lorem Ipsum available,
                            variations of passages of Lorem Ipsum available
                         </p>
                      </div>
@@ -462,10 +489,11 @@
                         </svg>
                      </div>
                      <div class="detail-box">
-                        <h5>
+                        <h5 style='color:white;'>
                            Best Quality
                         </h5>
                         <p>
+                           variations of passages of Lorem Ipsum available,
                            variations of passages of Lorem Ipsum available
                         </p>
                      </div>
@@ -478,7 +506,7 @@
 
 
 
-   <section class="cat_product_area section_gap">
+   <section class="cat_product_area section_gap" style='margin-top:-100px;'>
          <div class="container">
 
             <div class="heading_container heading_center">
@@ -502,12 +530,13 @@
                    <div class="col-lg-3 col-md-6">
                      <div class="single-product">
                        <div class="product-img">
+                        <a href="{% url 'product_detail' a.id %}">
                          <img
                            class="card-img"
                            src="/media/{{a.product_image}}"
                            alt="" style="height:300px;"
-                         />
-                         <div class="p_icon" style='background:#ff3333;color:black;width:300px;'>
+                         /> </a>
+                         {% comment %} <div class="p_icon" style='background:#ff3333;color:black;width:300px;'>
                            <a href="{% url 'product_detail' a.id %}" style='background:black;color:white'>
                              <i class="ti-eye" ></i>
                            </a>
@@ -517,7 +546,7 @@
                            <a href="{% url 'add-to-cart' %}?prod_id={{a.id}}" style='background:black;color:white'>
                              <i class="ti-shopping-cart"></i> 
                            </a>
-                         </div>
+                         </div> {% endcomment %}
                        </div>
                        <div class="product-btm">
                          <a href="#" class="d-block">
@@ -540,14 +569,15 @@
              </div>
            </div>
          </div>
+         <button style='height:50px;width:200px;border:none;background:red;color:white;margin-left:520px;'> <b>  <a href=" {% url 'product' %} " style='color:white'> View All Products </a> </b></button>
+
    </section>
-   <button style='height:50px;width:200px;border:none;background:red;color:white;margin-left:520px'> <b>  <a href=" {% url 'product' %} " style='color:white'> View All Products </a> </b></button>
 
       
       <!-- arrival section -->
    
 
-      <section class="cat_product_area section_gap">
+      <section class="cat_product_area section_gap" style='margin-top:-30px'>
          <div class="container">
 
             <div class="heading_container heading_center">
@@ -571,12 +601,13 @@
                    <div class="col-lg-3 col-md-6">
                      <div class="single-product">
                        <div class="product-img">
+                        <a href="{% url 'product_detail' a.id %}">
                          <img
                            class="card-img"
                            src="/media/{{a.product_image}}"
                            alt="" style="height:300px;"
-                         />
-                         <div class="p_icon" style='background:#ff3333;color:black;width:300px;'>
+                         /> </a>
+                         {% comment %} <div class="p_icon" style='background:#ff3333;color:black;width:300px;'>
                            <a href="{% url 'product_detail' a.id %}" style='background:black;color:white'>
                              <i class="ti-eye" ></i>
                            </a>
@@ -586,7 +617,7 @@
                            <a href="{% url 'add-to-cart' %}?prod_id={{a.id}}" style='background:black;color:white'>
                              <i class="ti-shopping-cart"></i> 
                            </a>
-                         </div>
+                         </div> {% endcomment %}
                        </div>
                        <div class="product-btm">
                          <a href="#" class="d-block">
@@ -611,7 +642,7 @@
            </div>
          </div>
    </section>
-   <button style='height:50px;width:200px;border:none;background:red;color:white;margin-left:520px'> <b>  <a href=" {% url 'product' %} " style='color:white'> View All Products </a> </b></button>
+   {% comment %} <button style='height:50px;width:200px;border:none;background:red;color:white;margin-left:520px'> <b>  <a href=" {% url 'product' %} " style='color:white'> View All Products </a> </b></button> {% endcomment %}
 
       
       <!-- earing product section -->
@@ -937,7 +968,7 @@
       <!-- footer start -->
 
 
-      <section class="cat_product_area section_gap">
+      {% comment %} <section class="cat_product_area section_gap" style='margin-top:-140px'>
          <div class="container">
 
             <div class="heading_container heading_center">
@@ -967,7 +998,7 @@
                            src="/media/{{a.image}}"
                            alt="" style="height:300px;"
                          /></a>
-                         {% comment %} <div class="p_icon" style='background:#ff3333;color:black;width:300px;'>
+                         <div class="p_icon" style='background:#ff3333;color:black;width:300px;'>
                            <a href="{% url 'product_detail' a.id %}" style='background:black;color:white'>
                              <i class="ti-eye" ></i>
                            </a>
@@ -977,7 +1008,7 @@
                            <a href="{% url 'add-to-cart' %}?prod_id={{a.id}}" style='background:black;color:white'>
                              <i class="ti-shopping-cart"></i> 
                            </a>
-                         </div> {% endcomment %}
+                         </div> 
                        </div>
                        <div class="product-btm">
                         
@@ -988,10 +1019,10 @@
                            <h4 style="color:black">{{a.name}}</h4>
                          </a>
                        
-                         {% comment %} <div class="mt-3">
+                         <div class="mt-3">
                            <span class="mr-4">${{a.selling_price}}</span>
                            <del>${{a.discounted_price}}</del>
-                         </div> {% endcomment %}
+                         </div> 
                        </div>
                      </div>
                    </div>
@@ -1006,11 +1037,61 @@
              </div>
            </div>
          </div>
-   </section>
+   </section> {% endcomment %}
    
+<section>
 
-
-   
-
-      {% endblock body %}
+   <div class="heading_container heading_center" style='margin-top:-30px'>
+      <h2>
+         Our <span>Category</span>
+      </h2> <br> <br>
+  
+   </div>
+   <div class="owl-carousel owl-theme">
+      {% for a in category  %}
+      
      
+      <div class="item">
+
+         <a href="">
+            <img
+              class="card-img"
+              src="/media/{{a.image}}"
+              alt="" style="height:300px;"
+            /></a>
+
+              
+            <a href=" {% url 'blog_category' %}" class="d-block">
+               <h4 style="color:black;text-align:center">{{a.name}}</h4>
+             </a>
+             
+      </div>
+      {% endfor %}
+     
+     
+  </div>
+</section>
+
+ 
+     
+
+    <script>
+     
+
+      var owl = $('.owl-carousel');
+      owl.owlCarousel({
+          items:4,
+          loop:true,
+          margin:10,
+          autoplay:true,
+          autoplayTimeout:1000,
+          autoplayHoverPause:true
+      });
+      $('.play').on('click',function(){
+          owl.trigger('play.owl.autoplay',[1000])
+      })
+      $('.stop').on('click',function(){
+          owl.trigger('stop.owl.autoplay')
+      })
+    </script>
+      {% endblock body %}
