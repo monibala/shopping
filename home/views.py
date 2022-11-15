@@ -42,7 +42,9 @@ def product_detail(request,pk):
 
 
 def about(request):
-    return render(request,'about.html')    
+    category = Category.objects.all()
+    res = {'category':category}
+    return render(request,'about.html',res)    
 
 def testimonial(request):
     return render(request,'testimonial.html')     
