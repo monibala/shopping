@@ -14,10 +14,10 @@ def product(request):
     cat = Category.objects.all()
     subcat = SubCategory.objects.all()
     prod = Product.objects.all().order_by('id')
-    paginator = Paginator(prod , 30 , orphans=1)
+    paginator = Paginator(prod , 6 , orphans=1)
     page_number = request.GET.get('page')
     page_obj = paginator.get_page(page_number)
-    res= {'cat':cat, 'subcat':subcat, 'prod':page_obj}
+    res= {'cat':cat, 'subcat':subcat, 'prod':prod, 'page_obj':page_obj}
     return render(request, 'product.html',res)
 
 def antiques(request):
